@@ -149,3 +149,9 @@ Student
 
 📄 License
 This task is for educational purposes. You can use it!
+
+
+```python
+print("Hello World")
+```
+
