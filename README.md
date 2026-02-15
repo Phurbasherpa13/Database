@@ -4,4 +4,4 @@ Normalized database schema for managing students, clubs, and memberships in 3rd 
 
 **Overview**
 
-**SRUDENT** (StudentID OK, StudentName, Email, CreatedAt)
+**STUDENT** (StudentID OK, StudentName, Email, CreatedAt)
