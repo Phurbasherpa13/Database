@@ -12,3 +12,9 @@ Normalized database schema for managing students, clubs, and memberships in 3rd 
 **Relationships**
 - Many-to-many between Student and Club, resolved by Membership (associative entity).
 - `ON DELETE CASCADE`on both FKs to avoid orphaned memberships.
+
+
+
+### Requirements
+- MySQL 8.0+ (InnoDB, foreign keys)
+- Docker
