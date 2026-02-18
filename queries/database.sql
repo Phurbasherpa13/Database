@@ -39,3 +39,15 @@ INSERT INTO Club (ClubName, ClubRoom, ClubMentor) VALUES
 ('Sports Club',  'R202', 'Ms. Sita'),
 ('Drama Club',   'R303', 'Mr. Kiran'),
 ('Coding Club',  'Lab1', 'Mr. Anil');
+
+
+INSERT INTO Membership (StudentID, ClubName, JoinDate) VALUES
+(1, 'Music Club',   '2024-01-10'),   
+(1, 'Sports Club',  '2024-01-12'),   
+(2, 'Music Club',   '2024-01-15'),   
+(3, 'Sports Club',  '2024-01-27'),   
+(4, 'Drama Club',   '2024-01-18'),   
+(5, 'Drama Club',   '2024-01-22'),  
+(5, 'Sports Club',  '2024-01-25'),   
+(6, 'Sports Club',  '2024-01-27'),   
+(7, 'Coding Club',  '2024-01-30');   
