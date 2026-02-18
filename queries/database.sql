@@ -32,3 +32,10 @@ INSERT INTO Student (StudentID, StudentName, Email) VALUES
 (5, 'Suman',  'suman@email.com'),
 (6, 'Pooja',  'pooja@email.com'),
 (7, 'Aman',   'aman@email.com');
+
+
+INSERT INTO Club (ClubName, ClubRoom, ClubMentor) VALUES
+('Music Club',   'R101', 'Mr. Raman'),
+('Sports Club',  'R202', 'Ms. Sita'),
+('Drama Club',   'R303', 'Mr. Kiran'),
+('Coding Club',  'Lab1', 'Mr. Anil');
