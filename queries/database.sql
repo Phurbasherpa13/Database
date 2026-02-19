@@ -51,3 +51,8 @@ INSERT INTO Membership (StudentID, ClubName, JoinDate) VALUES
 (5, 'Sports Club',  '2024-01-25'),   
 (6, 'Sports Club',  '2024-01-27'),   
 (7, 'Coding Club',  '2024-01-30');   
+
+SELECT * FROM Student;
+
+SELECT * FROM Club;
+
