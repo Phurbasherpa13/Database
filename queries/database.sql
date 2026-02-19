@@ -56,3 +56,16 @@ SELECT * FROM Student;
 
 SELECT * FROM Club;
 
+
+
+
+
+
+
+
+INSERT INTO Student (StudentID, StudentName, Email)
+VALUES (8, 'Raj', 'raj@email.com');
+
+
+INSERT INTO Student (StudentID, StudentName, Email)
+VALUES (8, 'Raj', 'raj@email.com');
