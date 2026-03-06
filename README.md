@@ -191,6 +191,8 @@ As we can see from the above, we have inserted sucessfully into students and als
 
 #### Join Operation
 All three tables will be joined here, and only StudentName, ClubName, and JoinDate will be displayed. This table then looks like this:
+
+
 <img src="/images/image-11.png" height="300" width="300">
 
 
