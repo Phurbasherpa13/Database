@@ -28,7 +28,7 @@ CREATE DATABASE IF NOT EXISTS club_db;
 show databases;
 ```
 - Expected result
-<img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image.png" height="300" width="300">
+<img src="/Database/images/image.png" height="300" width="300">
 
 
 - Create the table where every pirce of information is contained in a single table 
