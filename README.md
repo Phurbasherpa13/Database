@@ -28,7 +28,8 @@ CREATE DATABASE IF NOT EXISTS club_db;
 show databases;
 ```
 - Expected result
-![alt text](image.png)
+<img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image.png" height="" width="">
+
 
 - Create the table where every pirce of information is contained in a single table 
 ```bash
@@ -60,7 +61,7 @@ USE club_db;
 ```bash
  SELECT * FROM RawData;
 ``` 
-![alt text](image-1.png)
+<img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image-1.png" height="300" width="400">
 
 #### 2NF
 Lets elimate the partial functinal dependencies to execute 2NF. Lets seprate the table for Memberships, Clubs and Students.
@@ -76,7 +77,7 @@ CREATE TABLE Memberships_2NF AS
  SELECT * FROM Memberships_2NF;
  ```
 
- ![alt text](image-2.png)
+ <img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image-2.png" height="" width="">
 
 - Student database
 ```bash
@@ -95,7 +96,7 @@ CREATE TABLE Clubs_2NF AS
 # result 
 Select * FROM Clubs_2NF;
 ```
-![alt text](image-4.png)
+<img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image-4.png" height="" width="">
 
 #### 3NF
 After the 2NF, the ClubRoom and ClubMentor are still tied to the CLubName. However, a Transitive Dependency exists if a mentor's details depend on the club rather than the student. In 3NF, we move the Mentor into their own table.
@@ -137,23 +138,23 @@ JOIN Clubs_3NF c ON m.ClubName = c.ClubName;
 #reuslt
 SELECT * FROM Mentors_3NF;
 ```
-![alt text](image-5.png)
+<img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image-5.png" height="" width="">
 - Database for Membership
 ```bash
 #result 
 SELECT * FROM Memberships_3NF;
 ```
-![alt text](image-6.png)
+<img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image-6.png" height="" width="">
 
 - Database for Club
 ```bash
 SELECT * FROM Clubs_3NF;
 ```
-![alt text](image-7.png)
+<img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image-7.png" height="" width="">
 
 ## ER diagram
 It shows the relation of the database through ER diagram
-![alt text](image-8.png)
+<img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image-8.png" height="" width="">
 
 #### Basic Operation
 To verify the integrity of our 3NF schema, we perform standard CRUD (Create, Read, Update, Delete) operations.
@@ -167,7 +168,8 @@ To verify the integrity of our 3NF schema, we perform standard CRUD (Create, Rea
 ```bash
  SELECT * FROM Students_2NF;
 ```
-![alt text](image-9.png)
+<img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image-9.png" height="" width="">
+
 As we can we we inserted a new student successfully and now lets add a new club.
 
 **Inserting a new club**
@@ -182,13 +184,13 @@ INSERT INTO Clubs_3NF (ClubID, ClubName, ClubRoom, MentorID)
 ```bash
 SELECT * FROM Clubs_3NF;
 ```
-![alt text](image-10.png)
+<img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image-10.png" height="" width="">
  
 As we can see from the above, we have inserted sucessfully into students and also inserted a new club.
 
 #### Join Operation
 All three tables will be joined here, and only StudentName, ClubName, and JoinDate will be displayed. This table then looks like this:
-![alt text](image-11.png)
+<img src="C:\Users\sherp\OneDrive\Desktop\database\Database/images/image-11.png" height="" width="">
 
 
 # Quck Start
